@@ -66,6 +66,7 @@ main{
 .clients{
     padding-top: 12%;
     padding-left: 11%;
+    padding-right: 11%;
 }
 
 .content{
@@ -95,4 +96,10 @@ main{
 
 .bottle-img, .oranges-img, .cone-img, .sugar-img{
     width: 100%;
+}
+
+
+.footer{
+    height: 43vh;
+    background-color: hsla(168, 57%, 42%, 0.507);
 }
