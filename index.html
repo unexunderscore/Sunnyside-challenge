@@ -8,11 +8,6 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -28,101 +23,144 @@
 
 <body>
   <main>
-    <div class="column">
+    <div class="column ">
       <div class="front-hero">
       <!-- NAVBAR -->  
-      About
-      Services
-      Projects
-      Contact
+      <div class="navbar">
+        <a href="#">
+          <img src="./images/logo.svg" alt="Sunnyside icon" class="sunny-avatar">
+        </a>
+
+        <div id="navbar" class="nav-info">
+          <span class="nav-span"><a href="#">About</a></span>
+          <span class="nav-span"><a href="#">Services</a></span>
+          <span class="nav-span"><a href="#">Projects</a></span>
+          <span class="nav-span"><a id="nav-contact" href="#">Contact</a></span>
+        </div>
+        <div id="hamburger" class="hide">
+          <a href="javascript:void(0);" onclick="toggleMenu()" class="ham-icon"><img src="./images/icon-hamburger.svg" alt="hamburger icon"></a>
+        </div>
+    </div>
+       <!-- Hamburger menu -->
+        <div id="hamenu" class="ham-info d-flex justify-content-center flex-column align-items-center hide">
+          <span class="ham-span"><a href="#">About</a></span>
+          <span class="ham-span"><a href="#">Services</a></span>
+          <span class="ham-span"><a href="#">Projects</a></span>
+          <span class="ham-span"><a id="ham-contact" href="#">Contact</a></span>
+        </div>
+
       <!-- /NAVBAR --> 
-      <h1>We are creatives</h1>
+      <h1 class="creative-title">We are creatives</h1>
+    <!--  <div class="arrow-down">      I edited the background with arrow.  easy creative solution for fixing the arrow position :D (ducktape fix)
+        <img src="./images/icon-arrow-down.svg" alt="arrow pointing down">
+      </div>--> 
     </div>
 
     <div class="sixpack d-flex flex-wrap">
-      <div class="main-content brand col-6">
+      <div class="main-content brand col-lg-6 col-12">
         <div class="content">
-          <h2>Transform your brand</h2>
-
+          <h2 class="brand-title">Transform your brand</h2>
+          <span class="brand-content">
           We are a full-service creative agency specializing in helping brands grow fast. 
-          Engage your clients through compelling visuals that do most of the marketing for you.
-          Learn more
+          Engage your clients through compelling visuals that do most of the marketing for you.</span>
+         <div class="brand-learn">
+          <a href="#">Learn more</a>
+          <div class="brand-underline">
+            <!-- yellow underline --> 
+         </div>
+        </div>
+       
         </div>
        
       </div>
-      <div class="main-content egg-img col-6">
+      <div class="main-content egg-img col-lg-6 col-12">
         <!-- EGG IMG --> 
       </div>
-      <div class="main-content cup-img col-6">
+      <div class="main-content cup-img col-lg-6 col-12">
         <!-- CUP IMG --> 
       </div>
-      <div class="main-content audience col-6">
-        <h2>Stand out to the right audience</h2>
-
+      <div class="main-content audience col-lg-6 col-12">
+        <h2 class="audience-title">Stand out to the right audience</h2>
+        <span class="audience-content">
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-      
-        Learn more
+      </span>
+      <div class="audience-learn">
+        <a href="#">Learn more</a>
+        
+        <div class="audience-underline">
+          <!-- light red underline --> 
+       </div>
       </div>
-      <div class="main-content graphic cherry-img col-6">
-        <h3>Graphic design</h3>
+      </div>
+      <div class="main-content graphic cherry-img col-lg-6 col-12">
+        <div class="bottom-text grapics ">
+        <h3>Graphic Design</h3>
         <!-- cherry IMG --> 
         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-      
       </div>
-      <div class="main-content photoghraphy orange-img col-6">
+      </div>
+      <div class="main-content photography orange-img col-lg-6 col-12">
+        <div class="bottom-text photocs">
         <h3>Photography</h3>
         <!-- orange IMG --> 
         Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
       </div>
+      </div>
     </div>
   
 
   
-<div class="clients">
+<div class="clients ">
 
   <!-- uppercase title --> 
   <h3 id="client-title">Client testimonials</h3>
   
-  <div class="client-infos d-flex">
+  <div class="client-infos d-flex justify-content-center flex-wrap">
 
     <div class="emily">
       <img src="./images/image-emily.jpg" alt="Picture of Emily" class="emily-img"> <br>
-      We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-      Emily R.
-      Marketing Director
+      <div class="client-text">
+        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+      </div>
+      
+      <div class="client-name">Emily R.</div>
+      <span class="client-role">Marketing Director</span>
+      
     </div>
     
     <div class="thomas">
       <img src="./images/image-thomas.jpg" alt="Picture of Thomas" class="thomas-img"><br>
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-      Thomas S.
-      Chief Operating Officer
+      <div class="client-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</div>
+      <div class="client-name">Thomas S.</div>
+      <span class="client-role">Chief Operating Officer</span>
+
     </div>
     <div class="jennie">
       <img src="./images/image-jennie.jpg" alt="Picture of Jennie" class="jennie-img"><br>
-      Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-      Jennie F.
-      Business Owner
+      <div class="client-text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</div>
+      <div class="client-name">Jennie F.</div>
+      <span class="client-role">Business Owner</span>
+
     </div>
   </div>
   
 
 </div>
   
-<div class="fourpack d-flex">
-  <div class="footimgs">
+<div class="fourpack d-flex flex-wrap">
+  <div class="footimgs col-md-6">
     <!-- milk IMG --> 
     <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="bottles" class="bottle-img">
   </div>
-  <div class="footimgs">
+  <div class="footimgs col-md-6">
   <!-- orange on plate IMG --> 
   <img src="./images/desktop/image-gallery-orange.jpg" alt="oranges" class="oranges-img">
   </div>
-  <div class="footimgs">
+  <div class="footimgs col-md-6">
   <!-- cone IMG --> 
   <img src="./images/desktop/image-gallery-cone.jpg" alt="cone" class="cone-img">
   </div>
-  <div class="footimgs">
+  <div class="footimgs col-md-6">
   <!-- sugar IMG --> 
   <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugar-cubes" class="sugar-img">
   </div>
@@ -130,36 +168,48 @@
 </div>
   
   
-<div class="footer">
+<div class="footer d-flex justify-content-center">
 
+  <div class="footer-container">
   <!-- Sunnyside logo --> 
-<div class="infos">
-  About
-  Services
-  Projects
-</div>
+  <a href="#"><img class="footer-avatar" src="./images/logo.svg" alt="sunny-avatar"></a>
+
+  <div class="infos d-flex justify-content-between">
+
+  <div><a class="about" href="#">About</a></div> 
+  <div class="servics"><a class="services" href="#">Services</a></div>
+  <div><a class="projects" href="#">Projects</a></div>
+
+ </div>
+  
+
   
 <div class="socials">
+  <a class="facebook" href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+  <a class="insta" href="#"><img src="./images/icon-instagram.svg" alt="instagram"></a>
+  <a class="twitter" href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a>
+  <a class="pinterest" href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+
+
+
 
 <!-- facebook, insta, twitter, pinterest --> 
 
+
 </div>
 
+</div>
+
+</div>
+ 
 <!-- end of the footer --> 
-</div>
   
-
-  
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
 
 <!-- end of the column container --> 
 </div>
 </main>
+<!-- OWN JS -->
+<script src="./script.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
